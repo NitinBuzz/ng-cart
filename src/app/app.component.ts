@@ -13,7 +13,7 @@ export class AppComponent {
     
   }
   ngOnInit() {
-    this.recipeService.recipeSelected.subscribe((recipe: Any) => {
+    this.recipeService.recipeSelected.subscribe((recipe) => {
       console.log(`selected recipe is ${recipe.name}`)
     })
   }
