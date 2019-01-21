@@ -7,7 +7,7 @@ import {RecipeService} from '../recipe.service'
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  recipes: [];
+  recipes = [];
   
   constructor(private recipeService: RecipeService) {}
 
