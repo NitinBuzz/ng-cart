@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  background-color: crimson;
+  color: whitesmoke;
+  font-weight: 130%;
+  font-size: 130%;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.header-links {
+  display: flex;
+  float: right;
+}
+
+.header-links > a {
+  color: aliceblue;
+  padding-left: 24px;
+  padding-right: 16px;
+}

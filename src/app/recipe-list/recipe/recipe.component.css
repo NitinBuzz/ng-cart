@@ -1,0 +1,15 @@
+.recipe-desc {
+  width: max-content;
+}
+
+.recipe-a {
+  border: 1px solid antiquewhite;
+  display: flex;
+  padding: 8px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.recipe-a .recipe-img {
+  padding-left: 32px;
+}
