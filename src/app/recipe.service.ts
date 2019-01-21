@@ -2,7 +2,7 @@ import {EventEmitter} from '@angular/core';
 
 export class RecipeService {
   
-  recipeSelected = new EventEmitter<Any>();
+  recipeSelected = new EventEmitter<any>();
   
   private recipes = [
     {
