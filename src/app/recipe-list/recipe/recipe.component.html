@@ -1,4 +1,6 @@
-<a href="#" class="recipe-a" (click)="onSelected()">
+<a href="#" class="recipe-a" (click)="onSelected()" 
+   [routerLink]="['/recipe', item.name]"
+   >
   <div class="recipe-desc">
     <h4>Name: {{item.name}}</h4>
     <p>price: {{item.price}}</p>

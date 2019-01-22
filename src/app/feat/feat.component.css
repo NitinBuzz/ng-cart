@@ -1,0 +1,17 @@
+.m-l-0 {
+  margin-left: 0;
+}
+
+.recipe {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.message {
+  font-size: 120%;
+  font-weight: 900;
+  color: crimson;
+  margin-top: 24px;
+  width: max-content;
+  margin-bottom: 16px;
+}

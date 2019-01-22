@@ -1,8 +1,28 @@
-<!-- The content below is only a placeholder and can be replaced. -->
-<div class="container">
-  <div class="row">
-    <p>
-     Feat Works...
-    </p>
+<div class=" container row m-l-0">
+  <div class="col-xs-12">
+    <div *ngIf="any !=404">
+      <div class="message">
+         <p>
+         {{any}} is in stock.
+         </p>
+      </div>
+      <div>
+        <button>
+          <a href="#" [routerLink]="['/']"> Back off </a>
+        </button>
+      </div>
+    </div>
+     <div *ngIf="any == 404">
+      <div class="message">
+         <p>
+        Page Not Found
+         </p>
+      </div>
+      <div>
+        <button>
+          <a href="#" [routerLink]="['/']"> Home </a>
+        </button>
+      </div>
+    </div>
   </div>
 </div>

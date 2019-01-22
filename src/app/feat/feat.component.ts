@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-feat',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feat.component.css']
 })
 export class FeatComponent implements OnInit {
+  any;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.any = this.route.snapshot.params['any'];
+    this.route.params.subscribe(
+      (params) => {
+        this.any = params['any'];
+      }
+    );
   }
 
 }
